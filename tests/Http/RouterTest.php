@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 use App\Http\Router;
-use App\exceptions\NotFoundHttpException;
+use App\Exceptions\NotFoundHttpException;
 
 class RouterTest extends TestCase{
 
