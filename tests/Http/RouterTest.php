@@ -20,19 +20,19 @@ class RouterTest extends TestCase{
    }
 
 
-   // function test_route_not_found(){
-   //      $testRouter = new Router([
-   //          "/" => "/controllers/pokedex.php",
-   //          "/pokemon" => "/controllers/pokemon.php",
-   //          "/404" => "/controllers/404.php"
-   //       ]);
+   function test_route_not_found(){
+        $testRouter = new Router([
+            "/" => "/controllers/pokedex.php",
+            "/pokemon" => "/controllers/pokemon.php",
+            "/404" => "/controllers/404.php"
+         ]);
 
-   //       $this->assertSame($this->expectException(NotFoundHttpException::class), $testRouter->direct("/häst"));
+         $this->assertSame($this->expectException(NotFoundHttpException::class), $testRouter->direct("/häst"));
 
        
 
 
-   // }
+   }
 
 //    public function direct(string $uri){        
 //     if(isset($this->routes[$uri]))
